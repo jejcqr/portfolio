@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jean-Emmanuel Jacquier — Portfolio</title>
+  <meta name="description" content="Portfolio de Jean-Emmanuel Jacquier, alternant développeur full stack et étudiant en informatique à Epitech Lyon.">
+  <link rel="canonical" href="https://portfolio.tristounet.fr/">
+  <meta property="og:url" content="https://portfolio.tristounet.fr/">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Jean-Emmanuel Jacquier — Portfolio">
+  <meta property="og:description" content="Alternant développeur full stack, étudiant à Epitech Lyon.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:image" content="https://portfolio.tristounet.fr/images/og.png?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://portfolio.tristounet.fr/images/og.png?v=2">
+  <meta name="theme-color" content="#f7f6f3">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jean-Emmanuel Jacquier","url":"https://portfolio.tristounet.fr/","jobTitle":"Alternant développeur full stack","worksFor":{"@type":"Organization","name":"Dymension"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Epitech Lyon"},"address":{"@type":"PostalAddress","addressLocality":"Villeurbanne","addressCountry":"FR"},"sameAs":["https://github.com/jejcqr","https://www.linkedin.com/in/jean-emmanuel-jacquier-b58ab3352/"]}</script>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css?v=20261108a">
+  <script src="main.js?v=20261108a" defer></script>
+  <script src="fx.js?v=20261107zi" defer></script>
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Accueil"><img src="favicon.svg?v=2" width="28" height="28" alt=""><span>Jean-Emmanuel J.</span></a>
+    <nav id="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#about" data-i18n="nav_about">Parcours</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+        <li><a href="#activities" data-i18n="nav_activities">Activités</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+        <li><a href="#cv" data-i18n="nav_cv">CV</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+      <button id="lang" type="button" aria-label="Changer de langue / Switch language"><img id="langflag" src="images/flag-gb.svg" width="24" height="16" alt=""></button>
+      <button id="theme" type="button" aria-label="Changer de thème / Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <aside class="profile">
+        <img class="avatar" src="images/avatar.svg?v=2" width="148" height="148" alt="">
+        <h1>Jean-Emmanuel Jacquier</h1>
+        <p class="role" data-i18n="role">Alternant développeur full stack</p>
+        <p class="where">Dymension · Epitech Lyon</p>
+        <ul class="social">
+          <li><a href="https://github.com/jejcqr" rel="me noopener" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jean-emmanuel-jacquier-b58ab3352/" rel="me noopener" target="_blank">LinkedIn</a></li>
+        </ul>
+      </aside>
+      <div class="intro">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Bonjour, je suis</p>
+        <p class="hello"><span class="mask">Jean-Emmanuel</span></p>
+        <p class="typed"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+        <p class="lead" data-i18n="hero_lead">Alternant développeur full stack chez Dymension et étudiant en informatique à Epitech Lyon. Passionné par le développement, l'auto-hébergement et les systèmes.</p>
+        <p class="cta">
+          <a class="btn" href="#projects" data-i18n="hero_cta1">Voir mes projets</a>
+          <a class="btn ghost" href="#contact" data-i18n="hero_cta2">Me contacter</a>
+        </p>
+      </div>
+    </section>
+
+        <div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+    <section class="stats" aria-label="Chiffres clés">
+      <div class="stat"><strong data-count="5">5</strong><span data-i18n="stat_projects">projets</span></div>
+      <div class="stat"><strong data-count="3">3</strong><span data-i18n="stat_langs">langues</span></div>
+      <div class="stat"><strong>3 / 1</strong><span data-i18n="stat_rhythm">semaines entreprise / école</span></div>
+      <div class="stat"><strong>2027</strong><span data-i18n="stat_degree">diplôme prévu</span></div>
+    </section>
+
+    <section id="about">
+      <h2 data-i18n="about_title">Parcours</h2>
+      <p data-i18n="about_intro">Après des classes préparatoires, je me suis orienté vers l'informatique (BTS, BUT puis Epitech). J'aime construire des applications de bout en bout et héberger mes propres services.</p>
+      <ol class="timeline">
+        <li>
+          <span class="when">11/2026 →</span>
+          <div><h3 data-i18n="tl0_title">Alternant développeur full stack</h3><p data-i18n="tl0_text">Dymension conçoit des applications tactiles pour tables interactives et tablettes professionnelles. Depuis mon arrivée : documentation, outils DevOps et correction de bugs existants. Prochaine étape : l'application interne reliée aux bornes de l'entreprise, en architecture microservices.</p></div>
+        </li>
+        <li>
+          <span class="when">09/2026 →</span>
+          <div><h3 data-i18n="tl1_title">Bachelor Informatique &amp; Tech, 3<sup>e</sup> année</h3><p data-i18n="tl1_text">Epitech Lyon. Diplôme prévu en 2027, en alternance.</p></div>
+        </li>
+        <li>
+          <span class="when">04–05/2026</span>
+          <div><h3 data-i18n="tl2_title">Stage — Technicien bureautique</h3><p data-i18n="tl2_text">Communauté du Chemin Neuf (Lyon). Configuration et inventaire d'équipements destinés aux membres, et développement d'une solution automatisée de configuration de postes Windows.</p></div>
+        </li>
+        <li>
+          <span class="when">09/2025 – 06/2026</span>
+          <div><h3 data-i18n="tl3_title">BUT Informatique (Réalisation d'applications), 2<sup>e</sup> année</h3><p data-i18n="tl3_text">Université des Antilles. DUT Informatique obtenu en juillet 2026 (diplôme intermédiaire).</p></div>
+        </li>
+        <li>
+          <span class="when">01–06/2025</span>
+          <div><h3 data-i18n="tl4_title">BTS CIEL, 1<sup>re</sup> année</h3><p data-i18n="tl4_text">CNED. Cybersécurité, informatique et réseaux, électronique : ma réorientation vers l'informatique.</p></div>
+        </li>
+        <li>
+          <span class="when">09/2023 – 01/2025</span>
+          <div><h3 data-i18n="tl5_title">Classes préparatoires (PCSI puis PSI)</h3><p data-i18n="tl5_text">Les Chartreux, en partenariat avec CPE Lyon.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skills_title">Compétences</h2>
+      <div class="skillgroups">
+        <div>
+          <h3 data-i18n="sk_lang">Langages</h3>
+          <div class="chips" role="list">
+            <span role="listitem">Python</span><span role="listitem">C</span><span role="listitem">JavaScript</span><span role="listitem">PHP</span>
+            <span role="listitem">SQL</span><span role="listitem">HTML / CSS</span><span role="listitem">R</span>
+            <span role="listitem">Go</span>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="sk_fw">Frameworks</h3>
+          <div class="chips" role="list">
+            <span role="listitem">Django</span><span role="listitem">Node.js / Express</span><span role="listitem">jQuery</span>
+            <span role="listitem">React</span><span role="listitem">Flutter</span>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="sk_db">Bases de données</h3>
+          <div class="chips" role="list">
+            <span role="listitem">MySQL</span><span role="listitem">MariaDB</span><span role="listitem">MongoDB</span>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="sk_tools">Outils</h3>
+          <div class="chips" role="list">
+            <span role="listitem">VS Code</span><span role="listitem">Git</span><span role="listitem">Docker</span><span role="listitem">Nginx</span><span role="listitem">Caddy</span><span role="listitem">Traefik</span><span role="listitem">Grafana</span><span role="listitem">Prometheus</span>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="sk_ai">IA / LLM</h3>
+          <div class="chips" role="list">
+            <span role="listitem">API Groq</span><span role="listitem">MCP</span>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="sk_spoken">Langues</h3>
+          <div class="chips" role="list">
+            <span role="listitem" data-i18n="l_fr">Français : langue maternelle</span>
+            <span role="listitem" data-i18n="l_en">Anglais : C1 (certifié Cambridge)</span>
+            <span role="listitem" data-i18n="l_de">Allemand : B2 (baccalauréat, section européenne)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2 data-i18n="act_title">Activités</h2>
+      <div class="cards">
+        <article class="card">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-2.5 3.2-7 5.6-7 9.4A3.6 3.6 0 0 0 8.6 16c1.3 0 2.4-.6 3-1.6-.2 2.2-.9 3.8-2.1 5.1h5c-1.2-1.3-1.9-2.9-2.1-5.1.6 1 1.7 1.6 3 1.6a3.6 3.6 0 0 0 3.6-3.6C19 8.6 14.5 6.2 12 3z"/></svg>
+          <h3 data-i18n="act1_title">La coinche</h3>
+          <p data-i18n="act1_text">Une variante de la belote et l'un de mes loisirs préférés. Je cherche à rejoindre une association de coinche à Lyon pour jouer régulièrement.</p>
+          <p class="tags">Lyon · Villeurbanne</p>
+        </article>
+        <article class="card">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="1.5"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="1.5"/><path d="M7 7.25h.01M7 16.75h.01M11 7.25h6M11 16.75h6"/></svg>
+          <h3 data-i18n="act2_title">Homelab et auto-hébergement</h3>
+          <p data-i18n="act2_text">J'aime tester des outils et héberger moi-même mes services plutôt que de dépendre de plateformes tierces. Ce portfolio tourne d'ailleurs sur mon propre serveur.</p>
+          <p class="tags">Homelab · Linux</p>
+        </article>
+        <article class="card">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13zM6.5 8h2M15.5 8h2M15.5 11.5h2"/></svg>
+          <h3 data-i18n="act3_title">Mangas, manhwas et webtoons</h3>
+          <p data-i18n="act3_text">Je lis surtout des mangas, des manhwas et des webtoons : une bonne façon de décrocher des écrans de code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projects_title">Projets</h2>
+      <div class="tabs" role="tablist" aria-label="Filtre des projets">
+        <button type="button" role="tab" class="tab active" aria-selected="true" data-filter="all" data-i18n="tab_all">Tous</button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-filter="personal" data-i18n="proj_personal">Projets personnels</button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-filter="academic" data-i18n="proj_academic">Projets universitaires</button>
+      </div>
+      <div class="group" data-cat="personal">
+      <h3 class="subtitle" data-i18n="proj_personal">Projets personnels</h3>
+      <div class="cards">
+        <article class="card">
+          <h3>YeshuaBot</h3>
+          <p data-i18n="p1_text">Bot Discord en français pour lire la Bible (Louis Segond 1910) : recherche de versets, verset du jour envoyé automatiquement, lectures de la messe et calendrier liturgique.</p>
+          <p class="links"><a href="https://github.com/jejcqr/YeshuaBot" target="_blank" rel="noopener" data-i18n="code_link">Code source sur GitHub</a></p>
+          <p class="tags">Python · py-cord · MariaDB · Docker</p>
+        </article>
+        <article class="card">
+          <h3>AlHudaBot</h3>
+          <p data-i18n="p2_text">Bot Discord en français pour lire le Coran (texte arabe et traduction française) et des hadiths, avec l'envoi automatique d'une aya et d'un hadith du jour.</p>
+          <p class="links"><a href="https://github.com/jejcqr/AlHudaBot" target="_blank" rel="noopener" data-i18n="code_link">Code source sur GitHub</a></p>
+          <p class="tags">Python · py-cord · MariaDB · Docker</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="p3_title">Serveur personnel (VPS)</h3>
+          <p data-i18n="p3_text">VPS Debian partagé qui héberge mes bots et mes services : migration de tout vers Docker (Vaultwarden, TeamSpeak, MariaDB…), reverse proxy Traefik avec HTTPS automatique, conteneur Incus isolé pour un second utilisateur, pare-feu et SSH durcis, supervision Prometheus / Grafana avec alertes, sauvegardes chiffrées hors site testées en restauration.</p>
+          <p class="tags">Debian · Docker · Traefik · Incus · Prometheus · Grafana</p>
+        </article>
+      </div>
+      </div>
+      <div class="group" data-cat="academic">
+      <h3 class="subtitle" data-i18n="proj_academic">Projets universitaires</h3>
+      <div class="cards">
+        <article class="card">
+          <h3 data-i18n="a1_title">Plateforme de covoiturage</h3>
+          <p data-i18n="a1_text">Site de covoiturage pour les membres de l'université, avec une version mobile en bêta.</p>
+          <p class="tags">PHP · JavaScript · HTML · MySQL · Flutter</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="a3_title">Archivage numérique de documents</h3>
+          <p data-i18n="a3_text">Recherche, filtrage et gestion des droits d'accès pour un système d'archivage de documents.</p>
+          <p class="tags">PHP · MySQL</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section id="cv">
+      <h2 data-i18n="cv_title">CV</h2>
+      <p data-i18n="cv_text">Aperçu de mon CV. Cliquez dessus pour l'ouvrir dans un nouvel onglet, ou téléchargez-le en PDF.</p>
+      <div class="cv-grid">
+        <figure class="cv-card">
+          <a class="cv-preview" href="cv/cv-fr.pdf" target="_blank" rel="noopener" data-i18n-aria="cv_fr_aria" aria-label="Ouvrir le CV en français dans un nouvel onglet (PDF)">
+            <img src="images/preview_cv_fr.jpg?v=10" width="910" height="1287" loading="lazy" decoding="async" alt="Aperçu du CV en français de Jean-Emmanuel Jacquier">
+          <span class="cv-overlay" aria-hidden="true" data-i18n="cv_open">Ouvrir dans un nouvel onglet</span></a>
+          <figcaption>
+            <strong data-i18n="cv_fr_label">CV en français</strong>
+            <span class="cv-actions">
+              <a class="btn" href="cv/cv-fr.pdf" target="_blank" rel="noopener" data-i18n="cv_open">Ouvrir dans un nouvel onglet</a>
+              <a class="btn ghost" href="cv/cv-fr.pdf" download data-i18n="cv_dl">Télécharger</a>
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="cv-card">
+          <a class="cv-preview" href="cv/cv-en.pdf" target="_blank" rel="noopener" data-i18n-aria="cv_en_aria" aria-label="Ouvrir le CV en anglais dans un nouvel onglet (PDF)">
+            <img src="images/preview_cv_en.jpg?v=10" width="910" height="1287" loading="lazy" decoding="async" alt="Aperçu du CV en anglais de Jean-Emmanuel Jacquier">
+          <span class="cv-overlay" aria-hidden="true" data-i18n="cv_open">Ouvrir dans un nouvel onglet</span></a>
+          <figcaption>
+            <strong data-i18n="cv_en_label">CV en anglais</strong>
+            <span class="cv-actions">
+              <a class="btn" href="cv/cv-en.pdf" target="_blank" rel="noopener" data-i18n="cv_open">Ouvrir dans un nouvel onglet</a>
+              <a class="btn ghost" href="cv/cv-en.pdf" download data-i18n="cv_dl">Télécharger</a>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <div class="contact-box">
+        <p class="contact-lead" data-i18n="contact_text">Un projet, une question, une proposition ? Écrivez-moi. Je suis basé à Villeurbanne, près de Lyon.</p>
+        <a class="contact-mail" href="mailto:prenom.nom@example.com"><span>prenom.nom@example.com</span></a>
+        <ul class="contact-list">
+          <li><button type="button" id="copy" class="copy" data-copy="prenom.nom@example.com" data-i18n="copy_mail">Copier l'adresse</button></li>
+          <li><a href="https://github.com/jejcqr" rel="me noopener" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jean-emmanuel-jacquier-b58ab3352/" rel="me noopener" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="foot-links"><a href="mailto:prenom.nom@example.com">Mail</a> · <a href="https://github.com/jejcqr" rel="me noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/jean-emmanuel-jacquier-b58ab3352/" rel="me noopener" target="_blank">LinkedIn</a></p>
+    <p>© <span id="year">2026</span> Jean-Emmanuel Jacquier · <span data-i18n="footer">Site auto-hébergé</span></p>
+  </footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <a id="totop" href="#top" aria-label="Haut de page / Back to top">↑</a>
+</body>
+</html>

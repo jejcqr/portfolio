@@ -1,0 +1,28 @@
+# Production : conteneur derrière Traefik (réseau Docker externe "proxy"). Les en-têtes de sécurité sont posés par
+# le middleware Traefik (traefik-middleware.yml) ; nginx.conf est donc la version sans en-têtes.
+services:
+  portfolio:
+    image: nginxinc/nginx-unprivileged:alpine
+    container_name: portfolio
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m
+    volumes:
+      - ../site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks: [proxy]
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+      - traefik.http.routers.portfolio.rule=Host(`portfolio.tristounet.fr`)
+      - traefik.http.routers.portfolio.entrypoints=websecure
+      - traefik.http.routers.portfolio.middlewares=portfolio-sec@file
+      - traefik.http.services.portfolio.loadbalancer.server.port=8080
+networks:
+  proxy:
+    external: true

@@ -1,0 +1,12 @@
+http:
+  middlewares:
+    portfolio-sec:
+      headers:
+        contentTypeNosniff: true
+        frameDeny: true
+        referrerPolicy: strict-origin-when-cross-origin
+        stsSeconds: 31536000
+        contentSecurityPolicy: "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+        customResponseHeaders:
+          Permissions-Policy: "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+          Server: ""
