@@ -42,7 +42,8 @@
       cv_fr_label: "CV en français", cv_en_label: "CV en anglais", cv_open: "Ouvrir dans un nouvel onglet", cv_dl: "Télécharger", cv_fr_aria: "Ouvrir le CV en français dans un nouvel onglet (PDF)", cv_en_aria: "Ouvrir le CV en anglais dans un nouvel onglet (PDF)",
       contact_title: "Contact",
       contact_text: "Un projet, une question, une proposition ? Écrivez-moi. Je suis basé à Villeurbanne, près de Lyon.",
-      footer: "Site auto-hébergé"
+      footer: "Site auto-hébergé",
+      foot_src: "Code source"
     },
     en: {
       skip: "Skip to content",
@@ -84,7 +85,8 @@
       cv_fr_label: "Resume in French", cv_en_label: "Resume in English", cv_open: "Open in a new tab", cv_dl: "Download", cv_fr_aria: "Open the French resume in a new tab (PDF)", cv_en_aria: "Open the English resume in a new tab (PDF)",
       contact_title: "Contact",
       contact_text: "A project, a question, a proposal? Write to me. I am based in Villeurbanne, near Lyon.",
-      footer: "Self-hosted site"
+      footer: "Self-hosted site",
+      foot_src: "Source code"
     }
   };
 
